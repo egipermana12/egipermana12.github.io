@@ -1,0 +1,127 @@
+.header__h1 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: semibold; /* font-bold */
+    letter-spacing: -0.01562em;/* tracking-tight */
+    color: #E2E8F0; /* text-slate-200 */
+}
+
+.header__h2{
+    font-size: 1.125rem;
+    color: #E2E8F0; /* text-slate-200 */
+    letter-spacing: -0.01562em; /* tracking-tight */
+    font-weight: 500;
+}
+
+.header__p{
+    margin-top: 1rem;
+    max-width: 20rem;
+    line-height: 1.5;
+}
+
+.header_medsos{
+    margin-left: .25rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header_medsos_li{
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.header_link{
+    display: block;
+}
+
+a.header_link:hover{
+    color: #E2E8F0;
+    cursor: pointer;
+}
+
+.header_link > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.header_link--download {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: .2rem;
+}
+
+.header_link--download > p {
+    font-size: .87rem;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__nav_ul {
+    width: max-content;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.header__nav_ul > li > a {
+    display: flex;
+    align-items: center;
+    padding-top: .60rem;
+    padding-bottom: .60rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1rem;
+    font-size: .9rem;
+}
+
+.active .header__nav_indicator{
+    width: 4rem;
+}
+
+.header__nav_ul li a.active {
+    color: #E2E8F0; /* Ganti dengan warna yang Anda inginkan */
+}
+
+.header__nav_ul > li > a:hover {
+    color: #E2E8F0;
+}
+
+.nav-hr{
+    display: block;
+    width: 2rem;
+    height: 1px;
+    margin-right: 1rem;
+    background-color: #E2E8F0;
+}
+
+@media (min-width: 1024px) { /* lg */
+    .header{
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1280px;
+        padding-top: 6rem; /* md:px-24 */
+        padding-bottom: 6rem; /* md:px-24 */
+        width: 48%;
+    }
+
+    .header__nav{
+        display: block;
+    }
+}
+
+@media (min-width: 640px) { /* sm: breakpoint */
+    .header__h1 {
+        font-size: 3rem; /* text-5xl */
+    }
+    .header__h2{
+        font-size: 1.25rem;
+    }
+}
